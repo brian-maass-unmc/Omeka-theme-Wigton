@@ -1,0 +1,34 @@
+
+
+<?php if(empty($divclass)): ?>
+
+	<div class="flippers">
+		
+		<?php if (!empty($heading)): ?>
+			<h2><?php echo $this->escapeHtml($heading); ?></h2>
+		<?php endif; ?>
+	
+		<div class="flippers-container">
+			
+			<?php echo $html; ?>
+			
+		</div>
+	</div>
+	
+<?php else: ?>
+
+	<div class="flippers <?php echo $this->escapeHtmlAttr($divclass); ?>">
+		
+		<?php if (!empty($heading)): ?>
+			<h2><?php echo $this->escapeHtml($heading); ?></h2>
+		<?php endif; ?>
+		
+		<div class="flippers-container">
+			
+			<?php echo $html; ?>
+			
+		</div>
+		
+	</div>
+	
+<?php endif; ?>

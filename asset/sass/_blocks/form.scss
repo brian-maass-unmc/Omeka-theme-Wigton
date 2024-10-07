@@ -1,0 +1,119 @@
+form {
+	
+	label {
+		font-family: $roboto;
+		font-weight: 800;
+		font-size: 1.5rem;
+	}
+	
+	input, textarea {
+		width: 100%;
+		min-height: 45px;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		border-radius: 0;
+		border: 1px solid #323B40;
+		padding-left: 12px;
+	}
+	
+	textarea {
+		min-height: 200px;
+		padding-top: 12px;
+		font-family: $roboto;
+	}
+	
+	input[type="checkbox"] {
+		height: 25px;
+		width: 25px;
+		border-radius: 0;
+		border: 1px solid #323B40;
+		margin: 0;
+	}
+	
+	#submit, .search-submit, input[type="submit"] {
+		width: 151px;
+		color: #AD122A;
+		border: 1px solid #AD122A;
+		background-color: #fff;
+		min-height: 45px;
+		float: inherit;
+		
+		&:hover {
+			color: #FFF;
+			border: 1px solid #AD122A;
+			background-color: #AD122A;
+			cursor: pointer;
+		}
+	}
+	
+	
+	.required {
+		label {
+			position: relative;
+			
+			&:after {
+				content: '*';
+				color: #AD122A;
+				position: absolute;
+				right: -7px;
+				font-size: 12px;
+			}
+		}
+		
+	}
+	
+	fieldset[data-field-type="daterange"] {
+		display: inline-flex;
+		width: 100%;
+		
+		.field {
+			width: 10%;
+			margin-right: 50px;
+		}
+	}
+}
+
+
+#search-page, .block-search, .browse > #content {
+	max-width: 107rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 3.5rem;
+	padding-bottom: 3.5rem;
+	
+	.chosen-choices, .form-search input[type="search"] {
+		width: 100%!important;
+		min-height: 45px;
+		margin-top: 10px!important;
+		margin-bottom: 30px!important;
+		border-radius: 0;
+		border: 1px solid #323B40!important;
+		padding-left: 12px!important;
+	}
+	
+	.filter {
+		max-height: 45px;
+		margin-left: 0!important;
+		padding-left: 0!important;
+		padding-bottom: 2rem;
+		
+		input {
+			margin: 0!important;
+			height: 45px;
+		}
+		
+	}
+	
+	legend {
+		padding: 0;
+		font-family: $masqualero;
+		font-style: italic;
+		color: #323B40;
+		font-size: 3.2rem;
+		font-weight: 700;
+		margin: 4rem 0;
+	}
+	
+	
+	
+}

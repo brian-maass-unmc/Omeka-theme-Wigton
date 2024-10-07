@@ -1,0 +1,25 @@
+
+
+<?php if(empty($divclass)): ?>
+
+	<div class="wide hero">
+		
+		<?php if (!empty($heading)): ?>
+			<h1><?php echo $this->escapeHtml($heading); ?></h1>
+		<?php endif; ?>
+	
+		<?php echo $html; ?>
+	</div>
+	
+<?php else: ?>
+
+	<div class="wide hero <?php echo $this->escapeHtmlAttr($divclass); ?>">
+		
+		<?php if (!empty($heading)): ?>
+			<h1><?php echo $this->escapeHtml($heading); ?></h1>
+		<?php endif; ?>
+	
+		<?php echo $html; ?>
+	</div>
+	
+<?php endif; ?>
